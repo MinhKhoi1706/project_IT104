@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+}
+
+.login-page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  /* full black border */
+  border: 8px solid #000;
+  box-sizing: border-box;
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+  padding: 60px 80px;
+  flex: 1;
+}
+
+.login-left img {
+  width: 576px;
+  height: 348px;
+  display: block;
+}
+
+.login-right {
+  width: 420px;
+}
+.login-right h2 {
+  font-size: 14px;
+  margin: 0 0 8px 0;
+  color: #374151;
+  margin-top: 10px;
+  margin-right: 15px;
+}
+
+.social-login {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+.social-btn {
+  box-sizing: border-box;
+  width: 30px;
+  height: 38px;
+  border-radius: 6px;
+  background: #1d4ed8;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}
+
+.social-btn img {
+  width: 16px;
+  height: 16px;
+}
+
+.or-text {
+  color: #000;
+  font-weight: 600;
+  margin: 8px 0 12px 0;
+}
+
+.login-form .form-group {
+  margin-bottom: 14px;
+}
+.login-form label {
+  display: block;
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 6px;
+}
+.login-form input {
+  width: 423px;
+  height: 46px;
+  padding: 10px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.btn-login {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 8px;
+  width: 130px;
+  height: 48px;
+}
+
+.register-text {
+  color: black;
+  font-weight: bold;
+  font-size: 12px;
+  margin-top: 8px;
+}
+.register-link {
+  color: #ef4444;
+}
+
+.login-footer {
+  height: 72px;
+  background: #0b64e6;
+  color: white;
+  padding: 18px 36px;
+  margin: 30px 60px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-icons {
+  display: flex;
+  gap: 12px;
+}
