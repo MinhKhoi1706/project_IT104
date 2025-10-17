@@ -15,7 +15,7 @@ function Register() {
 
         {/* Bên phải (Form) */}
         <div className="register-form">
-          <form>
+          <form className="formBox">
             <div className="form-row">
               <div className="form-group">
                 <input type="text" placeholder="Enter first name"  className="box1"/>

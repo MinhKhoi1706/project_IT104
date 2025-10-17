@@ -1,9 +1,13 @@
 import AppRoutes from "./routes/AppRoutes";
+import Header from "./components/Header/Header";
+import AddPost from "./pages/Post/AddPost";
 
 function App() {
   return (
     <div>
-      <AppRoutes />
+      {/* <Header /> */}
+      {/* <AppRoutes /> */}
+      <AddPost />
     </div>
   );
 }

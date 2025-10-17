@@ -32,7 +32,7 @@ body,
 
 .login-left img {
   width: 576px;
-  height: 348px;
+  height: 384px;
   display: block;
 }
 
@@ -54,21 +54,31 @@ body,
 }
 .social-btn {
   box-sizing: border-box;
-  width: 30px;
+  width: 36px;
   height: 38px;
-  border-radius: 6px;
+  padding: 0;
+  border-radius: 8px;
   background: #1d4ed8;
   color: white;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   border: none;
   cursor: pointer;
+  font-size: 16px;
 }
 
 .social-btn img {
   width: 16px;
   height: 16px;
+  display: block;
+}
+
+/* Focus / active style: inner white ring + outer black ring */
+.social-btn:focus,
+.social-btn.active {
+  outline: none;
+  box-shadow: 0 0 0 3px #ffffff, 0 0 0 6px rgba(0,0,0,0.65);
 }
 
 .or-text {
@@ -87,7 +97,7 @@ body,
   margin-bottom: 6px;
 }
 .login-form input {
-  width: 423px;
+  width: 432px;
   height: 46px;
   padding: 10px 12px;
   border: 1px solid #e5e7eb;
@@ -115,11 +125,12 @@ body,
 }
 .register-link {
   color: #ef4444;
+  font-weight: bold;
 }
 
 .login-footer {
   height: 72px;
-  background: #0b64e6;
+  background: #0d6efd;
   color: white;
   padding: 18px 36px;
   margin: 30px 60px;

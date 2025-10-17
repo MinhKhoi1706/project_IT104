@@ -44,12 +44,21 @@
 .register-form {
   background-color: #f8f8f8;
   color: #333;
-  padding: 50px;
+  /* force exact size */
   width: 492px;
   height: 544px;
+  padding: 24px; /* keep some padding */
   box-sizing: border-box;
   border-radius: 12px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.formBox{
+  width: 394px;
+  height: 456px;
+  box-sizing: border-box;
+  margin: 30px 30px;
 }
 
 .form-row {
