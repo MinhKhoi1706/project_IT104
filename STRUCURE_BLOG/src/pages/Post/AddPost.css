@@ -56,6 +56,12 @@
   padding: 10px 12px;
   box-sizing: border-box;
   background: #fff;
+  color: black;
+}
+
+.textarea{
+  height: 82px;
+  width: 1858px;
 }
 
 .input,.select-like{
@@ -65,10 +71,6 @@
 .select-like {
   min-height: 40px;
   background: #f3f3f3;
-}
-.textarea {
-  min-height: 120px;
-  resize: vertical;
 }
 .status-row {
   display: flex;
@@ -108,10 +110,12 @@
   margin-top: 5px;
 }
 .add-btn {
+  width: 43px;
+  height: 35px;
   background: #28a745;
   color: #fff;
   border: none;
-  padding: 8px 14px;
+  padding: 8px 5px;
   border-radius: 6px;
 }
 

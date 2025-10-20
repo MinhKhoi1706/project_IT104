@@ -1,0 +1,317 @@
+.page-post-list {
+  background: #fff;
+  min-height: 100vh;
+}
+.container {
+  max-width: 1400px; /* increased so featured mid column has more room */
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 20px;
+  margin-left: 300px;
+}
+.section-title {
+    color: black;
+  display: flex;
+  flex-direction: column;
+  height: auto; /* Allow height to adjust based on content */
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1 1 auto;
+}
+.featured {
+  display: grid;
+  /* keep hero image fixed and allow the middle column to expand */
+  grid-template-columns: 592px 1fr 160px;
+  gap: 40px;
+  width: 100%;
+  /* allow featured to use full container width so mid column grows */
+  max-width: none;
+  margin-top: 10px; /* Push tag to the bottom */
+  margin: 0 auto 28px;
+  align-items: start;
+}
+/* layout columns handled by grid - no extra rules needed here */
+.mid .small-post {
+  display: flex;
+  gap: 8px; /* keep tight gap so text has more room next to image */
+  align-items: flex-start;
+  margin-bottom: 60px;
+}
+.mid .small-post img {
+  width: 320px; /* keep image size */
+  height: 200px; /* keep image size */
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 6px 18px rgba(11, 17, 32, 0.06);
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+.mid .small-body {
+  flex: 1;
+  min-width: 0; /* allow flex child to shrink and enable text truncation */
+  align-self: flex-start;
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  color: inherit;
+}
+.mid .small-post h5 {
+  margin: 0 0 4px;
+  font-size: 19px; /* reduce title size to minimize wrapping */
+  font-weight: 700;
+  color: #0b1220;
+  line-height: 1.02;
+  letter-spacing: -0.2px;
+  margin-bottom: 10px;
+}
+.mid .small-post .meta {
+  margin: 0 0 6px;
+  color: #7c3aed;
+  font-weight: 600;
+  font-size: 12px;
+}
+.mid .small-excerpt {
+  color: #6b7280;
+  line-height: 1.25; /* tighter lines help fit more text */
+  margin: 0 0 6px;
+  font-size: 14px; /* slightly smaller to avoid wrapping */
+}
+.small-post .meta {
+  margin: 0;
+  color: #7c3aed;
+  font-weight: 600;
+}
+.featured .left img {
+  width: 592px;
+  height: 268px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.featured .left h4 {
+  color: black;
+  margin: 12px 0 8px;
+  font-size: 26px;
+}
+.featured .meta {
+  color: #7c3aed; /* purple date */
+  font-size: 13px;
+  margin: 6px 0;
+  font-weight: 600;
+}
+.featured .excerpt {
+  color: #6b7280;
+  max-width: 760px;
+}
+
+.dates {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.date-block {
+  color: #7c3aed;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.tag-pill {
+  width: 107px;
+  height: 24px;
+  padding: 6px 10px;
+  border-radius: 16px;
+  background: #f3e8ff;
+  color: #7c3aed;
+  font-weight: 600;
+  font-size: 13px;
+}
+.tag-pill.small {
+  padding: 4px 8px;
+  /* default small tag style (will be overridden per-instance below) */
+  background: #e6f3ff;
+  color: #0b76d1;
+  margin-top: 30px;
+}
+.tag-pill.green {
+  margin-top: 30px;
+  font-size: 10px;
+  background: #d1fae5;
+  color: #059669;
+}
+.links-row {
+  margin: 18px 0;
+}
+.links-row a {
+    font-size: 25px;
+  color: #4f46e5;
+  margin-right: 16px;
+  cursor: pointer;
+}
+:hover .links-row a {
+    text-decoration: underline;
+}
+
+.categories-row {
+  margin-bottom: 18px;
+  display: flex;
+  gap: 12px;
+  color: #6b7280;
+}
+.categories-row span {
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: transparent;
+  color: #6b7280;
+  font-weight: 600;
+}
+.categories-row span.active {
+  background: #f3f4ff;
+  color: #4f46e5;
+}
+.grid-posts {
+  display: grid;
+  grid-template-columns: repeat(3, 384px); /* fixed card width */
+  gap: 28px;
+  margin-top: 22px;
+}
+.post-card {
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(11,17,32,0.04);
+  transition: transform 200ms ease, box-shadow 200ms ease;
+  width: 384px; /* fixed card width to match image */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.post-card img {
+  width: 384px; /* fixed image width */
+  height: 240px; /* fixed image height */
+  object-fit: cover;
+  display: block;
+}
+.post-body {
+  padding: 12px 10px 14px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;s
+  flex: 1 1 auto;
+}
+.post-body h4 {
+  margin: 8px 0 8px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #0b1220;
+  line-height: 1.2;
+}
+/* excerpt for grid posts (under title) */
+.post-body .excerpt {
+  margin: 6px 0 10px;
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.4;
+}
+.post-body .meta,
+.post-body .date,
+.post-body .meta {
+  display: block;
+  color: #7c3aed;
+  font-weight: 600;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.post-body p {
+  margin: 0 0 12px;
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.post-body .tag {
+  /* base tag pill style for grid cards */
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  margin-top: auto; /* keep tag pinned to bottom */
+  font-weight: 600;
+  align-self: flex-start; /* prevent flex child from stretching to full width */
+  white-space: nowrap; /* keep the label on one line and size the pill to text */
+}
+
+/* Featured / left tag (Daily Journal) */
+.featured .tag-pill {
+  background: #f3e8ff; /* light purple */
+  color: #7c3aed;
+}
+
+/* Mid column small tags: first small -> Work & Career (blue) */
+.mid .tag-pill.small {
+  background: #e6f3ff; /* light blue */
+  color: #0b76d1;
+}
+
+/* Mid column Personal Thoughts already uses .green, keep that color */
+.mid .tag-pill.small.green {
+  background: #d1fae5; /* soft green */
+  color: #059669;
+}
+
+.grid-posts .post-card:nth-child(1) .tag {
+  background: #f3e8ff;
+  color: #7c3aed;
+}
+.grid-posts .post-card:nth-child(2) .tag,
+.grid-posts .post-card:nth-child(4) .tag,
+.grid-posts .post-card:nth-child(5) .tag {
+  background: #e6f3ff;
+  color: #0b76d1;
+}
+.grid-posts .post-card:nth-child(3) .tag {
+  background: #d1fae5;
+  color: #059669;
+}
+.grid-posts .post-card:nth-child(6) .tag {
+  background: #fff1ff;
+  color: #8b5cf6;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 36px 0 60px;
+  background: #fff; /* make pagination bar background white */
+  padding: 18px 0; /* vertical padding so it looks like a bar */
+  position: relative; /* for absolutely positioned prev/next */
+}
+.page {
+  border: 1px solid #eee;
+  background: transparent;
+  color: #6b7280; /* page number color */
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+.page.active {
+  background: #f9f5ff; /* subtle active background */
+  box-shadow: 0 6px 18px rgba(11, 17, 32, 0.04);
+  color: #6b7280; /* keep number color consistent */
+}
+/* arrows / prev/next color */
+.pagination .prev,
+.pagination .next {
+  color: #6b7280;
+  background: transparent;
+  border: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.pagination .prev { left: -10px; }
+.pagination .next { right: 130px; }

@@ -1,0 +1,76 @@
+.site-footer {
+  border-top: 1px solid #e6e6e6;
+  background: #fff;
+  height: 399px;
+  box-sizing: border-box;
+}
+
+.footer-inner {
+  width: 1922px; 
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 260px 1fr 1fr 1fr 1fr; /* brand + 4 columns */
+  gap: 80px; /* wide gap to match spacing */
+  align-items: start;
+  padding-top: 28px;
+}
+
+.col h2 {
+  color: #111;
+  font-size: 36px; /* larger brand size */
+  margin: 12px 0 12px;
+  letter-spacing: 0.5px;
+}
+
+.col h4 {
+  color: #111;
+  font-size: 18px;
+  margin: 0 0 12px;
+  font-weight: 700;
+}
+
+.col p {
+  color: #6b7280;
+  line-height: 1.8;
+  max-width: 360px; /* narrow paragraph like image */
+  margin: 0;
+}
+
+.col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.col ul li {
+  margin: 14px 0;
+  color: #666;
+}
+
+.social-row {
+  margin-bottom: 18px;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons .social {
+  display: inline-block;
+  margin: 0 12px;
+  font-size: 18px;
+  color: #111;
+}
+.social-icon {
+  width: 24px;
+  height: 24px;
+  margin: 0 12px;
+}
+
